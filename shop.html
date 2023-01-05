@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Womazing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Интернет-магазин одежды" />
+    <meta name="keywords" content="Интернет-магазин одежды,новая коллекция" />
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="Fullviewapp / Home" />
+    <meta property="og:description" content="Womazing / Главная" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:image"
+      content="https://sitename.com/assets/img/preview.jpg"
+    />
+    <meta property="og:site_name" content="Интернет-магазин одежды" />
+
+    <!-- Favicon & Theme Color -->
+    <meta name="theme-color" content="#6E9C9F" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <!-- CSS here -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+  </head>
+  <body>
+    <div class="content">
+    <header>
+      <div class="header-area header-transparent">
+        <div class="main-header header-sticky">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- Logo -->
+              <div class="col-7 col-md-4 col-xl-2">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Логотип" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-2 col-md-5 col-xl-3 offset-xl-1 d-flex justify-content-end align-items-center order-xl-2">
+                <button type="button" class="btn-phone"></button>
+                <a href="tel:+74958235412" class="phone">+7 (495) 823-54-12</a>
+                <a href="cart.html" class="cart"><img src="assets/img/cart.svg" /></a>
+              </div>
+              <div class="col-3 col-md-2 col-xl-5 offset-md-1 d-flex justify-content-end justify-content-xl-start align-items-center order-xl-0">
+                <!-- Main-menu -->
+                <div class="main-menu">
+                  <nav>
+                    <ul id="navigation" class="navigation d-flex">
+                      <li><a href="index.html" >Главная</a></li>
+                      <li><a href="#" class="active">Магазин</a></li>
+                      <li><a href="about.html">О бренде</a></li>
+                      <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <button type="button" class="burger"><span></span></button>	
+              </div>
+             
+              <div class="wrapper-modal">
+                <div class="overlay">
+                  <form action="#" method="post" id="form-modal" class="form-modal js-form">
+                    <h3 class="form-modal__title d-flex justify-content-center">
+                      Заказать обратный звонок
+                    </h3>
+                      <input type="text" class="form-modal__input" name="name" placeholder="Имя" required>
+                      <input type="email" class="form-modal__input" name="email" placeholder="E-mail" required>
+                      <input type="tel" class="form-modal__input" name="phone" placeholder="Телефон"required>
+                      <button type="submit" class="btn offer__btn submit-btn" data-submit>Заказать звонок</button>
+                      <button type="button" class="menu-close" id="closeMenu"></button>
+                  </form>
+                  </div>
+              </div> 
+              <div class="response">
+                <div class="overlay">
+                  <div class="response__window">
+                   <h3 class="response__window-title d-flex justify-content-center">Отлично! Мы скоро вам перезвоним.</h3>
+                   <button type="button" class="response-close btn btn-ghost" id="closeResponse">Закрыть</button>
+                  </div>
+                </div>
+              </div>
+                                            
+               </div> 
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main> 
+      <section class="page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="page__title">Магазин</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная — </a></li>
+                    <li class="active">Магазин</li>                    
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section class="shop-products">
+        <div class="container">         
+          <div class="row">
+            <div class="col-12">
+              <div class="category__buttons">
+                  <nav>                                                        
+                      <div class="nav nav-tabs" id="nav-tab">
+                          <button type="button" class="nav_link active" id="nav-all-tab" href="#nav-all">Все</button>
+                          <button type="button" class="nav_link" id="nav-coat-tab"  href="#nav-coat">Пальто</button>
+                          <button type="button" class="nav_link" id="nav-sweatshirt-tab"  href="#nav-sweatshirt">Свитшоты</button>
+                          <button type="button" class="nav_link" id="nav-cardigan-tab"  href="#nav-cardigan">Кардиганы</button>
+                          <button type="button" class="nav_link" id="nav-hoody-tab"  href="#nav-hoody">Толстовки</button>
+                      </div>
+                  </nav>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="nav-tabContent">
+
+            <div class="row">
+              <div class="col-12">
+                <span class="quantity">Показано: <span>9 </span>из<span> 12</span> товаров</span>
+              </div>
+            </div>
+            
+            <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+             
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-coat" role="tabpanel" aria-labelledby="nav-coat-tab">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-sweatshirt" role="tabpanel" aria-labelledby="nav-sweatshirt-tab">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-3.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+             
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-3.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-3.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-1.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-cardigan" role="tabpanel" aria-labelledby="nav-cardigan-tab">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+             
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-1.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-2.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-hoody" role="tabpanel" aria-labelledby="nav-hoody-tab">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-3.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-3.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+             
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="new-collection__items">
+                      <div class="item__img">
+                        <a href="product.php">
+                         <img src="assets/img/item-3.jpg" alt="" />
+                         <div class="card__overlay"></div>
+                        </a>
+                      </div>
+                      <div class="item__desc text-center">
+                        <h4 class="item__title">
+                          <a href="product.php">Футболка USA</a>
+                        </h4>
+                        <span class="price old-price">
+                        <span>$</span>
+                         229
+                        </span>
+                        <span class="price">
+                        <span>$</span>
+                        229
+                        </span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Купальник Glow</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                    <span>$</span>
+                     129
+                    </span>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="new-collection__items">
+                  <div class="item__img">
+                    <a href="product.php">
+                      <img src="assets/img/item-3.jpg" alt="" />
+                      <div class="card__overlay"></div>
+                    </a>
+                  </div>
+                  <div class="item__desc text-center">
+                    <h4 class="item__title">
+                      <a href="product.php">Свитшот Sweet Shot</a>
+                    </h4>
+                    <span class="price old-price"><span></span></span>
+                    <span class="price">
+                     <span>$</span>
+                      129
+                    </span>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <span class="quantity quantity-bottom">Показано: <span>9 </span>из<span> 12</span> товаров</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <ul class="pagination">
+                  <li class="page-number-active">1</li>
+                  <li class="page-number"><a href="#">2</a></li>
+                  <li class="page-arrow"><a href="#"><img src="assets/img/arrow-pagination.svg"></a></li>
+              </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+     
+    </main>
+  </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="footer__logo">
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="Логотип" />
+              </a>
+            </div>
+            <span class="footer__text">
+              © Все права защищены
+            </span>
+            <a href="#" class="footer__text">
+              Политика конфиденциальности
+            </a>
+            <a href="#" class="footer__text">
+              Публичная оферта
+            </a>
+          </div>
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <ul class="footer__menu d-flex">
+              <li><a href="index.html" class="active">Главная</a></li>
+              <li class="shop-link"><a href="shop.html"></a>
+                Магазин
+                <ul class="shop-menu">
+                  <li><a href="#">Пальто</a></li>
+                  <li><a href="#">Свитшоты</a></li>
+                  <li><a href="#">Кардиганы</a></li>
+                  <li><a href="#">Толстовки</a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">О бренде</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-2 offset-xl-1 ml-auto text-align-left">
+            <div class="block-right">
+            <div class="footer__contacts">
+                <a href="tel:+74958235412" class="footer__phone  d-flex justify-content-end">+7 (495) 823-54-12</a>
+                <a href="mailto:hello@womazing.com" class="footer__email d-flex justify-content-end">hello@womazing.com</a>
+            </div>
+            <div class="footer__social d-flex justify-content-end">
+                <!--noindex--> 
+							<a href="#" class="social__icon" rel="nofollow noopener noreferrer" target="_blank"><img src="assets/img/instagram.svg"></a> 
+              <!--/noindex-->
+            <!--noindex--> 
+            <a href="#" class="social__icon" rel="nofollow noopener noreferrer" target="_blank"><img src="assets/img/facebook.svg"></a> 
+               <!--/noindex-->						
+             <!--noindex--> 
+                         <a href="#" class="social__icon" rel="nofollow noopener noreferrer" target="_blank"><img src="assets/img/twitter.svg"></a> 
+                       <!--/noindex-->
+            </div>
+            <div class="payment d-flex justify-content-end">
+              <img src="assets/img/visa-mastercard.png" alt="">
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top">
+      <a title="Go to Top" href="#"><i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="./assets/js/parallax.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./assets/js/vendor/jquery.validate.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
